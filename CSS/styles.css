@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
+
+/* 
+font-family: "Inconsolata", monospace;
+
+font-family: "Space Mono", monospace; */
+* {
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+.title {
+  color: #333333;
+  font-size: 0.7rem;
+  font-family: "Space Mono", monospace;
+  padding: 10px 10px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 90%;
+}
+.text {
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.principal {
+  text-align: left;
+  color: #333333;
+  font-size: 2.5rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  padding: 30px;
+}
+.secondary {
+  text-align: left;
+  color: #333333;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  padding: 30px;
+}
+.btn {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+button {
+  background-color: #333333;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  color: aliceblue;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+  border: 1px solid #333323;
+  opacity: 0.7;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  margin-top: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#msg {
+  width: 586px;
+  height: 190px;
+}
+.item {
+  border: 1px solid blue;
+}
+
+@media only screen and (max-width: 660px) {
+  .container {
+    display: block;
+  }
+  .main {
+    display: block;
+  }
+}
